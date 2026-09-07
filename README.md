@@ -87,3 +87,16 @@ echo "Deployment completed successfully."
 curl -L -o deploy.sh https://gist.githubusercontent.com/qus0in/d36165612fdfdb1e3622924ef37d6b46/raw/2d9424734b5f8ef8e8b6cd3871a0ce6740160b51/deploy.sh
 ls -l deploy.sh
 ```
+
+```sh
+cat app.env
+cat deploy.sh
+head -n 3 deploy.sh
+tail -n 3 deploy.sh
+```
+
+```sh
+grep "APP_" app.env
+grep -n "echo" deploy.sh
+cat deploy.sh | grep -i "server"
+```
