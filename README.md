@@ -55,4 +55,22 @@ pwd
 ```sh
 # history
 # clear
+echo "Hello Linux"
+echo $HOME
+
+export APP_ENV=development
+export PORT=8080
+printenv APP_ENV
+printenv PORT
+echo $APP_ENV
+echo $PORT
+```
+
+```sh
+echo "APP_ENV=development" > app.env
+# cat app.env
+# echo "PORT=8080" > app.env
+# cat app.env
+echo "PORT=8080" >> app.env
+cat app.env
 ```
