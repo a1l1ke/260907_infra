@@ -74,3 +74,16 @@ echo "APP_ENV=development" > app.env
 echo "PORT=8080" >> app.env
 cat app.env
 ```
+
+```sh
+#!/bin/bash
+echo "Starting deployment service..."
+echo "Target server environment: ${APP_ENV:-local}"
+echo "Listening port: ${PORT:-8080}"
+echo "Deployment completed successfully."
+```
+
+```sh
+curl -L -o deploy.sh https://gist.githubusercontent.com/qus0in/d36165612fdfdb1e3622924ef37d6b46/raw/2d9424734b5f8ef8e8b6cd3871a0ce6740160b51/deploy.sh
+ls -l deploy.sh
+```
