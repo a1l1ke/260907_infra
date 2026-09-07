@@ -100,3 +100,19 @@ grep "APP_" app.env
 grep -n "echo" deploy.sh
 cat deploy.sh | grep -i "server"
 ```
+
+```sh
+ls -l deploy.sh
+./deploy.sh
+# sh deploy.sh 
+chmod +x deploy.sh
+ls -l deploy.sh 
+# deploy.sh
+./deploy.sh
+```
+
+```sh
+ls -l
+chmod 744 app.env
+ls -l
+```
